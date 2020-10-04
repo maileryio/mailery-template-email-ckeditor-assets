@@ -1,7 +1,7 @@
 {
-  "name": "@maileryio/_____",
+  "name": "@maileryio/mailery-template-email-ckeditor-assets",
   "version": "1.0.0",
-  "description": "_____",
+  "description": "Assets for Mailery Template Email CKEditor module",
   "license": "BSD-3-Clause",
   "main": "dist/main.umd.js",
   "module": "dist/main.esm.js",
@@ -23,7 +23,9 @@
     "build:umd": "rollup --config build/rollup.config.js --format umd --file dist/main.umd.js",
     "build:umd:min": "cross-env NODE_ENV=production rollup --config build/rollup.config.js --format umd --file dist/main.umd.min.js"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@ckeditor/ckeditor5-vue": "^1.0.3"
+  },
   "devDependencies": {
     "@rollup/plugin-buble": "^0.21.3",
     "@rollup/plugin-commonjs": "^13.0.0",
@@ -62,10 +64,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/maileryio/_____.git"
+    "url": "git+https://github.com/maileryio/mailery-template-email-ckeditor-assets.git"
   },
   "bugs": {
-    "url": "https://github.com/maileryio/_____/issues"
+    "url": "https://github.com/maileryio/mailery-template-email-ckeditor-assets/issues"
   },
-  "homepage": "https://github.com/maileryio/_____#readme"
+  "homepage": "https://github.com/maileryio/mailery-template-email-ckeditor-assets#readme"
 }

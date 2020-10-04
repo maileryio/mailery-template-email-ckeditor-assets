@@ -16,7 +16,7 @@ const isProd = env === 'production';
 export default (async () => ({
   input: 'src/index.js',
   output: {
-    name: '_____',
+    name: 'mailery.template.email.ckeditor',
     exports: 'named',
     sourcemap: true,
     globals: {
