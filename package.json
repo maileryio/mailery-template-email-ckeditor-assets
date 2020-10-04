@@ -24,6 +24,7 @@
     "build:umd:min": "cross-env NODE_ENV=production rollup --config build/rollup.config.js --format umd --file dist/main.umd.min.js"
   },
   "dependencies": {
+    "@ckeditor/ckeditor5-build-classic": "^23.0.0",
     "@ckeditor/ckeditor5-vue": "^1.0.3"
   },
   "devDependencies": {
