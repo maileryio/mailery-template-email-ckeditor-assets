@@ -1,4 +1,4 @@
-import buble from '@rollup/plugin-buble';
+import babel from '@rollup/plugin-babel';
 import commonjs from '@rollup/plugin-commonjs';
 import replace from '@rollup/plugin-replace';
 import json from '@rollup/plugin-json';
@@ -54,8 +54,11 @@ export default (async () => ({
       css: true,
       compileTemplate: true
     }),
-    buble({
-      objectAssign: 'Object.assign'
+    babel({
+      babelHelpers: 'runtime',
+      plugins: [
+        '@babel/plugin-transform-runtime'
+      ]
     }),
     isProd && (await import('rollup-plugin-terser')).terser()
   ]
