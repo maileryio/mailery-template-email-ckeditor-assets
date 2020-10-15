@@ -6,8 +6,7 @@
 </template>
 
 <script>
-  import CKEditor from '@ckeditor/ckeditor5-vue';
-  import ClassicEditor from '@ckeditor/ckeditor5-build-classic';
+  import CKEditor from 'ckeditor4-vue';
 
   export default {
     name: 'ui-template-email-ckeditor',
@@ -25,10 +24,12 @@
     },
     data() {
       return {
-        editor: ClassicEditor,
         editorData: this.inputValue,
         editorConfig: {
-          // The configuration of the editor.
+          fullPage: true,
+          allowedContent: true,
+          filebrowserUploadUrl: 'includes/create/upload.php',
+          height: '570px'
         }
       };
     }
