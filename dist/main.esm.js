@@ -229,8 +229,11 @@ var script = {
       editorConfig: {
         fullPage: true,
         allowedContent: true,
-        filebrowserUploadUrl: 'includes/create/upload.php',
-        height: '570px'
+        //filebrowserUploadUrl: '/template/image/upload',
+        height: '570px',
+        qtBorder: '0',
+        startupShowBorders: false,
+        removePlugins: 'about'
       }
     };
   }
